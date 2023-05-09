@@ -83,11 +83,6 @@ def main(player1, player2):
             except Exception as e:
                 print("Error! Try again!")
                 print(e)
-
-
-if __name__ == "__main__":
-    player1, player2 = player_selection()
-    main(player1, player2)
     play_again = input(
         "Do you want to play again?\n'y' for yes and 'n' for no.\n")
     if play_again == "n":
@@ -97,3 +92,8 @@ if __name__ == "__main__":
     else:
         print(
             "That is not what you were supposed to write in but i will take it as a yes :>")
+
+
+if __name__ == "__main__":
+    player1, player2 = player_selection()
+    main(player1, player2)
