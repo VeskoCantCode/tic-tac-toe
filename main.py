@@ -9,12 +9,14 @@ def player_selection():
         if player1.capitalize() == "X":
             player2 += "O"
             print(f"Player1: {player1}\n"
-                  f"Player2: {player2}")
+                  f"Player2: {player2}\n"
+                  f"------------------")
             return player1, player2
         elif player1.capitalize() == "O":
             player2 += "X"
             print(f"Player1: {player1}\n"
-                  f"Player2: {player2}")
+                  f"Player2: {player2}\n"
+                  f"------------------")
             return player1, player2
         elif player1.capitalize() != "X" and "O":
             print("Invalid choice!\nTry again!")
@@ -97,6 +99,7 @@ def main(player1, player2):
     else:
         print(
             "That is not what you were supposed to write in but i will take it as a yes :>")
+        main(player1,player2)
 
 
 if __name__ == "__main__":
